@@ -6,8 +6,8 @@ machine:
 
 dependencies:
   cache_directories:
-    - /home/ubuntu/nvm/versions/node/v6.9.0/bin
-    - /home/ubuntu/nvm/versions/node/v6.9.0/lib/node_modules
+    - /opt/circleci/nodejs/v6.9.0/lib/node_modules
+    - /opt/circleci/nodejs/v6.9.0/bin
   override:
     - npm install -g gulp-cli
     - npm install
