@@ -5,6 +5,8 @@ machine:
       CONTINUOUS_INTEGRATION: true
 
 dependencies:
+  cache_directories:
+    - /opt/circleci/nodejs/v6.9.0/lib/node_modules
   override:
     - npm install -g gulp-cli
     - npm install
