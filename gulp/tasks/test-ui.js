@@ -41,9 +41,9 @@ function runAndExit(options) {
 
 exports.task = function () {
     const port = 8000;
-    const deployDir = path.normalize(process.cwd() + '/../test/testpage');
+    const deployDir = path.normalize(process.cwd() + '/test/testpage');
 
-    console.log('---starting local server on port ' + port + "---");
+    console.log('---starting local server on port', port, '---');
     statik({
         port: port,
         root: deployDir
