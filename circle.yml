@@ -1,0 +1,21 @@
+machine:
+  node:
+    version: 6.9.0
+  environment:
+      CONTINUOUS_INTEGRATION: true
+
+dependencies:
+  override:
+    - npm install -g gulp-cli
+    - npm install
+    - npm rebuild node-sass
+    - gulp ddescribe-iit
+    - gulp build
+
+test:
+  override:
+    - npm install -g @testim/testim-cli
+    - mkdir -p $CIRCLE_TEST_REPORTS/testim/
+    - cp -f dist/angular-material.min.js test/testpage/angular-material.min.js
+    - cp -f dist/angular-material.min.css test/testpage/angular-material.min.css
+    - gulp test-ui

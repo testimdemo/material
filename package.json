@@ -73,6 +73,7 @@
     "postcss": "^5.1.2",
     "prompt-sync": "^1.0.0",
     "q": "^1.0.1",
+    "statik": "^1.4.6",
     "stream-series": "^0.1.1",
     "through2": "^2.0.1"
   },

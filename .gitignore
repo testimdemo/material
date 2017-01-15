@@ -6,3 +6,5 @@ dist
 .nvmrc
 tmp/
 .editorconfig
+testpage/angular-material.min.css
+testpage/angular-material.min.js
