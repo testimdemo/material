@@ -56,7 +56,9 @@ exports.task = function () {
         port: 4444,
         reportFile: process.env.CIRCLE_TEST_REPORTS ? process.env.CIRCLE_TEST_REPORTS + '/testim/testim-report.xml': null,
         ext: '/opt/testim-headless',
-        label: ["sanity"]
+        label: ["sanity"],
+        tunnel: true,
+        tunnelPort: port
     };
 
     console.log('---run test---');
