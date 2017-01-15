@@ -8,3 +8,5 @@ tmp/
 .editorconfig
 testpage/angular-material.min.css
 testpage/angular-material.min.js
+angular-material.min.css
+angular-material.min.js
